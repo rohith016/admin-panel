@@ -1,0 +1,25 @@
+{
+    "name": "rohith016/e-commerce-stock-models",
+    "description": "A package for e-commerce stock models including products, orders, and addresses.",
+    "keywords": ["ecommerce", "laravel", "models", "stock"],
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Rohith Ramachandran",
+        "email": "rohithdpr016@gmail.com"
+      }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Rohith\\EcommercePackage\\": "src/"
+      }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Rohith\\EcommercePackage\\EcommerceServiceProvider"
+        ]
+      }
+    }
+  }
+  

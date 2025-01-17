@@ -1,0 +1,33 @@
+{
+  "name": "rohith016/admin-panel",
+  "license": "MIT",
+  "description": "Admin Panel Dashboard for Web Applications",
+  "type": "library",
+  "repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/rohith016/admin-panel"
+    }
+  ],
+  "require": {
+      "php": "^7.4|^8.0"
+  },
+  "authors": [
+        {
+            "name": "Rohith Ramachandran",
+            "email": "rohithdpr016@gmail.com"
+        }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Rohith\\AdminPackage\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Rohith\\AdminPackage\\AdminPanelServiceProvider"
+      ]
+    }
+  }
+}
