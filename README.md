@@ -48,26 +48,20 @@ php artisan vendor:publish --provider="Rohith\AdminPackage\AdminPanelServiceProv
 ## Selective Publishing
 Use the following commands to publish specific resources:
 
-Publish Models:
+Publish Assets:
 
 ```bash
-php artisan vendor:publish --tag=ecommerce-models
+php artisan vendor:publish --tag=admin-panel-assets
 ```
-Publish Migrations:
+Publish Views:
 
 ```bash
-php artisan vendor:publish --tag=ecommerce-migrations
+php artisan vendor:publish --tag=admin-panel-views
 ```
-Publish Seeders:
+Publish Routes:
 
 ```bash
-php artisan vendor:publish --tag=ecommerce-seeders
-```
-Publish Factories:
-
-```bash
-php artisan vendor:publish --tag=ecommerce-factories
-
+php artisan vendor:publish --tag=admin-panel-routes
 ```
 
 ## Contributing
