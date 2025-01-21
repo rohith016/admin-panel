@@ -64,6 +64,11 @@ Publish Routes:
 php artisan vendor:publish --tag=admin-panel-routes
 ```
 
+Publish Config:
+```bash
+php artisan vendor:publish --tag=admin-panel-config
+```
+
 ## Contributing
 Contributions are welcome! Feel free to submit a pull request or open an issue for suggestions and improvements.
 

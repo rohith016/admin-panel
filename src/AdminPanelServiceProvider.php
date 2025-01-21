@@ -36,6 +36,13 @@ class EcommerceServiceProvider extends ServiceProvider
 
         // php artisan vendor:publish --tag=admin-panel-routes
 
+        // publish config/adminlte.php to config directory
+        $this->publishes([
+            __DIR__ . '/config/adminlte.php' => config_path('adminlte.php'),
+        ], 'admin-panel-config');
+
+        // php artisan vendor:publish --tag=admin-panel-config
+        
 
         // Automatically add admin routes to web.php
         $webRoutesPath = base_path('routes/web.php');
