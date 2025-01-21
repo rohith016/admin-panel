@@ -69,6 +69,20 @@ Publish Config:
 php artisan vendor:publish --tag=admin-panel-config
 ```
 
+Pblish MenuServiceProvider:
+
+```bash
+
+- bootstrap\providers.php
+
+return [
+    .........
+    App\Providers\MenuServiceProvider::class
+];
+
+```
+
+
 ## Contributing
 Contributions are welcome! Feel free to submit a pull request or open an issue for suggestions and improvements.
 
