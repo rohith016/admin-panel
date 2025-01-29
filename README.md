@@ -97,6 +97,11 @@ if (config('adminlte.login.registration')){
     Route::redirect('register', 'login')->name('register');
 }
 
+// add this code in guest section
+
+Route::redirect('/', '/login')->name('home');
+
+
 ```
 
 
