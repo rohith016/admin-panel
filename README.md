@@ -73,6 +73,8 @@ Publish MenuServiceProvider:
 
 ```bash
 
+php artisan vendor:publish --tag=admin-panel-menu-provider
+
 - bootstrap\providers.php
 
 return [
