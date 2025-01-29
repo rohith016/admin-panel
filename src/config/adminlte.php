@@ -45,6 +45,17 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Admin Application Menus Source Type
+    |--------------------------------------------------------------------------
+    |
+    | This URL is used by the console to properly generate URLs when using
+    | the Artisan command line tool. You should set this to the root of
+    | the application so that it's available within Artisan commands.
+    | type = config | database
+    */
+    "menu_source" => "database",
+    /*
+    |--------------------------------------------------------------------------
     | Admin Application Menus
     |--------------------------------------------------------------------------
     |
@@ -53,7 +64,6 @@ return [
     | the application so that it's available within Artisan commands.
     |
     */
-
     'menu' => [
         [
             'name' => 'Dashboard',
@@ -81,7 +91,7 @@ return [
         // ],
     ],
 
-        /*
+    /*
     |--------------------------------------------------------------------------
     | Admin Application Login Page Menu
     |--------------------------------------------------------------------------
@@ -94,9 +104,10 @@ return [
 
     "login" => [
         "social" => [
-            "fb" => true,
-            "google" => true
+            "fb" => false,
+            "google" => false
         ],
-        "registration" => true
+        "registration" => false
     ],
+
 ];

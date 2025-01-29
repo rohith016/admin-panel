@@ -69,6 +69,25 @@ Publish Config:
 php artisan vendor:publish --tag=admin-panel-config
 ```
 
+Publish Models:
+
+```bash
+php artisan vendor:publish --tag=admin-panel-menu-model
+```
+
+Publish Migrations:
+
+```bash
+php artisan vendor:publish --tag=admin-panel-migrations
+```
+
+Publish Seeders:
+
+```bash
+php artisan vendor:publish --tag=admin-panel-seeders
+```
+
+
 Publish MenuServiceProvider:
 
 ```bash
@@ -105,6 +124,8 @@ Route::redirect('/', '/login')->name('home');
 
 
 ```
+
+
 
 
 ## Contributing

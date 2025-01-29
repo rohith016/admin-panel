@@ -37,21 +37,40 @@ class EcommerceServiceProvider extends ServiceProvider
 
         // Publish routes/admin.php to routes directory
         $this->publishes([
-            __DIR__ . '/routes/admin.php' => base_path('routes/admin.php'),
+            __DIR__ . '/routes' => base_path('routes'),
         ], 'admin-panel-routes');
 
         // php artisan vendor:publish --tag=admin-panel-routes
 
-        // publish config/adminlte.php to config directory
+        // publish config/ to config directory
         $this->publishes([
-            __DIR__ . '/config/adminlte.php' => config_path('adminlte.php'),
+            __DIR__ . '/config' => config_path(),
         ], 'admin-panel-config');
 
         // php artisan vendor:publish --tag=admin-panel-config
 
+        // publish Models/Menu.php to app/Models directory
+        $this->publishes([
+            __DIR__ . '/Models' => app_path('Models'),
+        ], 'admin-panel-menu-model');
+        // php artisan vendor:publish --tag=admin-panel-menu-model
+
+        // publish database/migrations/ to database/migrations directory
+        $this->publishes([
+            __DIR__ . '/database/migrations' => database_path('migrations'),
+        ], 'admin-panel-migrations');
+        // php artisan vendor:publish --tag=admin-panel-migrations
+
+        // publish database/seeders/ to database/seeders directory
+        $this->publishes([
+            __DIR__ . '/database/seeders' => database_path('seeders'),
+        ], 'admin-panel-seeders');
+        // php artisan vendor:publish --tag=admin-panel-seeders
+
+
         // publish providers/MenuServiceProvider.php to app/Providers directory
         $this->publishes([
-            __DIR__ . '/providers/MenuServiceProvider.php' => app_path('Providers/MenuServiceProvider.php'),
+            __DIR__ . '/providers' => app_path('Providers'),
         ], 'admin-panel-menu-provider');
         // php artisan vendor:publish --tag=admin-panel-menu-provider
 

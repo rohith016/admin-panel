@@ -40,7 +40,7 @@
             </div> --}}
           </div>
           <!-- /.col -->
-          <div class="col-4">
+          <div class="col-12">
             <div class="d-grid gap-2">
               <button type="submit" class="btn btn-dark">{{ __('Register') }}</button>
             </div>

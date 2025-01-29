@@ -21,14 +21,14 @@
         </div>
         <!--begin::Row-->
         <div class="row">
-          <div class="col-8">
+          <div class="col-12">
             <div class="form-check">
               <input class="form-check-input" id="remember_me" name="remember" type="checkbox"/>
               <label class="form-check-label" for="flexCheckDefault">{{ __('Remember me') }}</label>
             </div>
           </div>
           <!-- /.col -->
-          <div class="col-4">
+          <div class="col-12">
             <div class="d-grid gap-2">
               <button type="submit" class="btn btn-dark">{{ __('Log in') }}</button>
             </div>
