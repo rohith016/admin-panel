@@ -27,4 +27,14 @@
         </a>
         </div>
     </div>
+@elseif (session('status'))
+    <div class="col-12">
+        <div class="callout callout-success">
+            {{ session('status') }}
+        </a>
+        </div>
+    </div>
+
 @endif
+
+

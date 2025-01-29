@@ -69,7 +69,7 @@ Publish Config:
 php artisan vendor:publish --tag=admin-panel-config
 ```
 
-Pblish MenuServiceProvider:
+Publish MenuServiceProvider:
 
 ```bash
 
@@ -79,6 +79,23 @@ return [
     .........
     App\Providers\MenuServiceProvider::class
 ];
+
+```
+
+Manage Register page with config data
+```bash
+- routes\auth.php
+
+// update this code
+
+if (config('adminlte.login.registration')){
+    Route::get('register', [RegisteredUserController::class, 'create'])
+    ->name('register');
+
+    Route::post('register', [RegisteredUserController::class, 'store']);
+} else {
+    Route::redirect('register', 'login')->name('register');
+}
 
 ```
 

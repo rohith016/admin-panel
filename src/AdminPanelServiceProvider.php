@@ -28,6 +28,12 @@ class EcommerceServiceProvider extends ServiceProvider
 
         // php artisan vendor:publish --tag=admin-panel-views
 
+        $this->publishes([
+            __DIR__ . '/resources/auth' => resource_path('views/auth'),
+        ], 'admin-panel-auth-views');
+
+        // php artisan vendor:publish --tag=admin-panel-auth-views
+
 
         // Publish routes/admin.php to routes directory
         $this->publishes([
