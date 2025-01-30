@@ -55,12 +55,16 @@
                   </ul>
               </li>
           @else
-              <li class="nav-item  {{  request()->routeIs( $item['route_name'] ) ? 'menu-open' : '' }}">
-                  <a href="{{ route($item['route_name']) }}" class="nav-link">
-                      <i class="nav-icon {{ $item['icon'] }}"></i>
-                  <p>{{ $item['name'] }}</p>
-                  </a>
-              </li>
+               @php
+                    $routeName =  explode(".", $item['route_name'])[0];
+                    $mainRouteNameGroup = $routeName . ".*";
+                @endphp
+                <li class="nav-item  {{  request()->routeIs( $mainRouteNameGroup ) ? 'menu-open' : '' }}">
+                    <a href="{{ route($item['route_name']) }}" class="nav-link">
+                        <i class="nav-icon {{ $item['icon'] }}"></i>
+                    <p>{{ $item['name'] }}</p>
+                    </a>
+                </li>
           @endif
 
       @endforeach
