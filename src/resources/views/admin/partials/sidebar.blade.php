@@ -56,8 +56,12 @@
               </li>
           @else
                @php
-                    $routeName =  explode(".", $item['route_name'])[0];
-                    $mainRouteNameGroup = $routeName . ".*";
+                  $routeName =  explode(".", $item['route_name']);
+                  if(count($routeName) == 1){
+                      $mainRouteNameGroup = $routeName[0];
+                  } else {
+                      $mainRouteNameGroup = $routeName[0] . ".*";
+                  }
                 @endphp
                 <li class="nav-item  {{  request()->routeIs( $mainRouteNameGroup ) ? 'menu-open' : '' }}">
                     <a href="{{ route($item['route_name']) }}" class="nav-link">

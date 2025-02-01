@@ -1,6 +1,23 @@
 # E-commerce Package
 A reusable Laravel package for admin panel
 
+
+## Screen Shots
+
+- Login Page
+
+<img src="src/screenshots/login-full.png" width="400" height="400">
+
+- Dashboard
+
+<img src="src/screenshots/dashboard.png" width="800" height="400">
+
+- Profile
+
+<img src="src/screenshots/profile.png" width="800" height="400">
+
+
+
 ## Features
 Preloaded Admin views includes layouts, dashboard, profile
 Admin panel assets
@@ -133,4 +150,6 @@ Contributions are welcome! Feel free to submit a pull request or open an issue f
 
 ## License
 This package is open-source software licensed under the MIT license.
+
+
 

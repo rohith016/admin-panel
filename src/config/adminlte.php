@@ -68,7 +68,7 @@ return [
         [
             'name' => 'Dashboard',
             'url' => '/dashboard',
-            'route_name' => 'dashboard.index',
+            'route_name' => 'dashboard',
             'icon' => 'bi bi-speedometer',
         ],
         // [
